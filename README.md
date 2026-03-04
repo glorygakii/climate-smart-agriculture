@@ -19,6 +19,17 @@ View the full case study at: [glorygakii.com/projects/agriculture-pipeline.html]
 - Jupyter Notebook
 - Excel
 
+## Screenshots
+
+### Crop Yield & Climate Analysis
+![Crop Yield & Climate Analysis](assets/python-analysis.png)
+
+### Data Ingestion & Pipeline
+![Data Pipeline](assets/python-pipeline.png)
+
+### Excel Summary Output
+![Excel Summary](assets/agriculture-excel.png)
+
 ## Notebooks
 
 | Notebook | Description |
