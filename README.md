@@ -19,13 +19,21 @@ View the full case study at: [glorygakii.com/projects/agriculture-pipeline.html]
 - Jupyter Notebook
 - Excel
 
+## Notebooks
+
+| Notebook | Description |
+|----------|-------------|
+| [P1 — Data Cleaning & Analysis](notebooks/P1_data_cleaning_analysis.ipynb) | Introduces the Maji Ndogo dataset; performs data cleanup and analysis covering crop preferences, fertile grounds, climate and geography, and data filtering |
+| [P2 — Exploratory Data Analysis](notebooks/P2_EDA_analysis.ipynb) | Univariate and multivariate analysis across geographic, weather, and soil features; explores crop yield relationships across 8 crop types including coffee |
+| [P3 — Data Pipeline & Validation](notebooks/P3_data_pipeline.ipynb) | Refactors code into a modular pipeline (ingestion, cleaning, corrections); validates the full dataset against weather station data using hypothesis testing |
+
 ## Pipeline Stages
 
-1. Data Ingestion — SQLite database and web CSV sources
-2. Data Cleaning — fixing column swaps, spelling errors, negative values
-3. Statistical Analysis — correlation between climate variables and crop yields
-4. Visualisation — Matplotlib charts
-5. Excel Export — clean summary for non-technical stakeholders
+1. **Data Ingestion** — SQLite database and web CSV sources
+2. **Data Cleaning** — fixing column swaps, spelling errors, negative values
+3. **Statistical Analysis** — correlation between climate variables and crop yields
+4. **Visualisation** — Matplotlib charts
+5. **Excel Export** — clean summary for non-technical stakeholders
 
 ## Key Python Techniques
 
@@ -37,6 +45,7 @@ View the full case study at: [glorygakii.com/projects/agriculture-pipeline.html]
 - Excel export using openpyxl
 
 ## Core Pipeline Code
+
 ```python
 def create_db_engine(db_path):
     """Creates and returns a SQLAlchemy database engine."""
@@ -64,15 +73,17 @@ weather_df = read_from_web_CSV(config_params['weather_csv_path'])
 
 - Identified strong correlation between seasonal rainfall and crop yields across regions
 - Flagged temperature anomaly years where yields dropped significantly
+- Validated data integrity by cross-referencing field measurements against weather station records
 - Produced a clean Excel summary accessible to agricultural extension officers
 - Built a reproducible pipeline that can be rerun as new data becomes available
 
 ## Project Structure
+
 ```
 climate-smart-agriculture/
 ├── notebooks/
 │   ├── P1_data_cleaning_analysis.ipynb
-│   ├── P2_EDA_data_validation.ipynb
+│   ├── P2_EDA_analysis.ipynb
 │   └── P3_data_pipeline.ipynb
 ├── data/
 │   └── Maji_Ndogo_farm_survey_small.db
@@ -87,4 +98,4 @@ Glory Gakii Mbiti — Data Scientist and BI Analyst based in Nairobi, Kenya
 
 - Portfolio: [glorygakii.com](https://glorygakii.com)
 - LinkedIn: [linkedin.com/in/glorygakii](https://linkedin.com/in/glorygakii)
-- Email: gakiimbiti6@gmail.com
+- Email: [gakiimbiti6@gmail.com](mailto:gakiimbiti6@gmail.com)
